@@ -11,15 +11,15 @@
 /* ************************************************************************** */
 #include <stdio.h>
 
-void	ft_print_alphabet(void)
+void	ft_print_reverse_alphabet(void)
 {
 	char	letter;
 
-	letter = 'a';
-	while (letter < 'z')
+	letter = 'z';
+	while (letter >= 'a')
 	{
 		putchar(letter);
-		letter ++;
+		letter--;
 	}
 	putchar('\n');
 	return ;
@@ -27,5 +27,6 @@ void	ft_print_alphabet(void)
 
 int	main(void)
 {
-	ft_print_alphabet();
+	ft_print_reverse_alphabet();
+	return (0);
 }
