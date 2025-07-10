@@ -1,0 +1,1 @@
+combiner la fonction ft_swap et ft_div_mod sans crée *div *mod juste en faisant / et %
