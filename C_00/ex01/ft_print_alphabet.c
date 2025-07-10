@@ -9,23 +9,25 @@
 /*   Updated: 2025/07/09 17:54:21 by kkaced           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
+#include <unistd.h>
 
-void	ft_print_alphabet(void)
-{
-	char	letter;
+void  ft_putchar(char c)
+ {
+   write(1, &c, 1); }
 
-	letter = 'a';
-	while (letter < 'z')
-	{
-		putchar(letter);
-		letter ++;
-	}
-	putchar('\n');
-	return ;
+void  ft_print_alphabet(void) {
+  char letter;
+
+  letter = 'a';
+  while (letter < 'z') {
+    ft_putchar(letter);
+    letter++;
+  }
+  ft_putchar('\n');
+  return;
 }
 
-int	main(void)
-{
-	ft_print_alphabet();
+int main(void) {
+  ft_print_alphabet();
+  return (0);
 }
