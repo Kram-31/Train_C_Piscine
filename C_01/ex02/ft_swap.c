@@ -1,6 +1,6 @@
-#include <stdio.h> // a retirer apres pour la moulinette
 #include <unistd.h>
 
+void	ft_putchar
 
 void	ft_swap(int *a, int *b)
 {
